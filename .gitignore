@@ -1,0 +1,3 @@
+# ignora platforms
+platforms/
+node_modules/
