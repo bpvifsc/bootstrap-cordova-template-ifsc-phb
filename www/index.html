@@ -50,49 +50,83 @@
                 <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
               </form>
+
             </div>
           </nav>
       
           <main role="main" class="container">
       
             <div class="starter-template">
-              <h1>Bootstrap starter template</h1>
-              <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+              <h1>Template inicial de Bootstrap</h1>
+              <p class="lead">Use este documento para iniciar seus projetos.</p>
+              
+              
               <div class="jumbotron">
-                <h1>Navbar example</h1>
-                <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-                <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+                <h1>Exemplo de caixa de texto</h1>
+                <p class="lead">Este exemplo mostra como utilizar a classe <code>jumbotron</code> para criar uma caixa de texto.
+                Qualquer outro elemento html pode ser inserido nesta caixa. Exemplo de link html com aparencia de botão</p>
+                <a class="btn btn-lg btn-primary" href="http://palhoca.ifsc.edu.br" role="button">IFSC Phb &raquo;</a>
               </div>
 
            
               <form class="form-signin">
                 <div class="text-center mb-4">
                   <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-                  <h1 class="h3 mb-3 font-weight-normal">Floating labels</h1>
-                  <p>Build form controls with floating labels via the <code>:placeholder-shown</code> pseudo-element. <a href="https://caniuse.com/#feat=css-placeholder-shown">Works in latest Chrome, Safari, and Firefox.</a></p>
+                  <h1 class="h3 mb-3 font-weight-normal">Formulários</h1>
+                  <p>Exemplo de como utilizar a tag <code>form</code> e outros elementos de formulários. Se os dados forem processados no javascript o 
+                    <code>button type</code> <em>NÃO</em> pode ser <code>submit</code></p>
                 </div>
           
                 <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>                  
                 </div>
           
                 <div class="form-label-group">
                   <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  
                 </div>
           
                 <div class="checkbox mb-3">
                   <label>
-                    <input type="checkbox" value="remember-me"> Remember me
+                    <input type="checkbox" value="remember-me"> lembrar login
                   </label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Fazer login</button>
                 <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
               </form>
+           
+              <div class="jumbotron">
+                <p>Exemplo de uso de dialogs</p>
+                <!-- Botão para mostrar dialog -->
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="mostraMensagem();">
+                  Mostrar janela Modal
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <!-- aqui pode ser inserido o conteúdo html do dialog modal -->
+                        <p id="mensagem"> ... </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Nome da ação</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+           
+            </div>
 
-            
+           
       
           </main>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

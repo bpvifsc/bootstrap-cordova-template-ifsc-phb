@@ -9,3 +9,8 @@ document.addEventListener("inicio", executaAcao);
 function executaAcao() {
     console.log("Scripts de index.html");    
 }
+
+function mostraMensagem() {
+    document.getElementById('exampleModalLabel').innerText = "Este é um Dialog Modal";
+    document.getElementById('mensagem').innerText = "Aqui vai o texto da mensagem.";
+}
